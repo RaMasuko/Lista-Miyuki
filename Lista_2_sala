@@ -1,0 +1,91 @@
+#Ex 1
+n1, n2, n3=input().split()
+n1=float(n1)
+n2=float(n2)
+n3=float(n3)
+m=(n1+n2+n3)/3
+print("media:",m)
+if m>=6:
+    print("aprovado")
+else:
+    print("reprovado")
+
+#Ex 2
+n1, n2=input().split()
+n1=float(n1)
+n2=float(n2)
+m=(n1+n2)/2
+if m>=6:
+    print("Aprovado")
+    print("Media: %.1f" %m)
+else:
+  ne=float(input())
+  m=(m+ne)/2
+  if m>=5:
+    print("Aprovado")
+    print("Media: %.1f" %m)
+  else:
+    print("Reprovado")          
+    print("Media: %.1f" %m)
+
+#Ex 3
+n=float(input())
+m=float(input())
+if n>=m:
+  print(n-m)
+else:
+  print(m-n)
+
+#EX 4
+n1, n2, n3=input().split()
+n1=float(n1)
+n2=float(n2)
+n3=float(n3)
+if n1<n2+n3 and n2<n1+n3 and n3<n1+n2:
+  print("Triangulo ")
+  if n1==n2 and n2==n3:
+    print("Equilatero")
+  elif n1==n2 or n2==n3 or n3==n1:
+    print("Isosceles")
+  else:
+    print("Escaleno")
+else:
+  print("Valores nao formam um triangulo")
+
+#Ex 5
+n1, n2, n3=input().split()
+n1=float(n1)
+n2=float(n2)
+n3=float(n3)
+ordem=sorted([n1, n2, n3])
+print(ordem)
+
+#Ex 6
+import math
+a, b, c=input().split()
+a=float(a)
+b=float(b)
+c=float(c)
+d=b*b-4*a*c
+x1=(-b+math.sqrt(d))/(2*a)
+x2=(-b-math.sqrt(d))/(2*a)
+print ("x1=",x1,"x2=",x2)
+
+#Ex7
+a=int(input())
+m=int(input())
+if a<0:
+  a=a*-1
+print (a%m)
+
+#Ex8
+n1, n2, n3=input().split()
+n1=int(n1)
+n2=int(n2)
+n3=int(n3)
+if n1%2==0 and n1%3==0:
+    print(n1)
+if n2%2==0 and n2%3==0:
+    print(n2)
+if n3%2==0 and n3%3==0:
+    print(n3)
