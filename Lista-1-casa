@@ -1,0 +1,89 @@
+#Ex 1
+r=float(input())
+d=r/2.4
+print(d)
+
+#Ex 2
+d=float(input())
+r=d*2.4
+print(r)
+
+#Ex 3
+AP=float(input("Digite o valor da altura da parede: "))
+LP=float(input("Digite o valor da largura da parede: "))
+AA=float(input("Digite o valor da altura do azulejo: "))
+LA=float(input("Digite o valor da largura do azulejo: "))
+APD = AP * LP
+AAZ = AA * LA
+Q =  APD / AAZ
+print("A quantidade de azulejos necessária para cobrir a parede é: ", Q)
+
+#Ex 4
+h=float(input())
+b= float(input())
+area=b*h
+perimetro=2*(b+h)
+print("Area é: " area)
+print("Perimetro é: " perimetro)
+
+#Ex 5
+m=float(input())
+h=float(input())
+imc= m/(h*h)
+print(imc)
+
+#Ex 6
+r=float(input())
+a=3.14159*r*r
+c=2*3.14159*r
+print(a)
+print(c)
+
+#Ex 7
+r=float(input())
+a=4*3.14159*r*r
+v=(4/3)*3.14159*r*r*r
+print(a)
+print(v)
+
+#Ex 8
+b1=float(input())
+b2=float(input())
+b3=float(input())
+b4=float(input())
+mf=(b1+b2+b3+b4)/4
+print(mf)
+
+#Ex 9
+p1=float(input())
+p2=float(input())
+a=float(input())
+m=(p1*4+p2*4+a*2)/10
+print(m)
+
+#Ex 10
+a=float(input())
+b=float(input())
+c=a
+a=b
+b=c
+print(a)
+print(b)
+
+#Ex 11
+a=float(input())
+b=float(input())
+a, b = b, a
+print(a)
+print(b)
+
+#Ex 12
+d=float(input())
+t=float(input())
+v=d/t
+print(v)
+
+#Ex 13
+t=float(input())
+s=2+3*t+0.5*10*t*t
+print(s)
