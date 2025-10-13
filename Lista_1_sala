@@ -1,0 +1,43 @@
+#Ex 1
+v=float(input())
+t=float(input())
+d=v*t
+l=9/12
+print("velocidade média é de:",v)
+print("tempo gasto é de:",t)
+print("distância percorrida é de:",d)
+print("litros de combustível gasto é de:",l)
+
+#Ex 2
+f=float(input())
+c=(((f-32)*5)/9)
+print("A temperatura em graus Celsius é: ",c)
+
+#Ex 3
+r=float(input())
+h= float(input())
+v=3.14159*r*r*h
+print("VOLUME = f" v)
+
+#Ex 4
+a=float(input())
+b=float(input())
+a, b = b, a
+print(a, b)
+
+#Ex 5
+x=int(input())
+x=x*x
+print(x)
+
+#Ex 6
+v=float(input())
+t=float(input())
+tp=float(input())
+p=v(v*(t/100)*tp)
+print(p)
+
+#Ex 7
+nc=int(input())
+c=(nc*0.7)/18+10
+print(c)
