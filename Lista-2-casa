@@ -1,0 +1,54 @@
+#Ex 1
+x = int(input())
+if x%2==0:
+    print("O número é par")
+else:
+   print("O número é ímpar")
+
+#Ex 2
+x1 = int(input("Entre com o número chave: "))
+x2 = int(input("Entre com um número: "))
+d=x1-x2
+if d<0:
+    d=d*-1
+print("A distancia entre os números é: ",d)
+
+#Ex 3
+x1=float(input())
+y1=x1
+y1=int(y1)
+d=x1-y1
+if d>=0.5:
+    y1=y1+1
+else:
+    y1=y1
+print(y1)
+
+#Ex 4
+n1, n2, n3=input().split()
+n1=float(n1)
+n2=float(n2)
+n3=float(n3)
+ordem=sorted([n1, n2, n3])
+print(ordem[2])
+print(ordem[0])
+print(ordem[1])
+
+#Ex 5
+sb = float(input())
+if sb<800:
+  print("Sem descontos")
+elif sb>=800 and sb<=1600:
+  sl= sb-(sb*0.08)
+  sl=sl-(sl*0.05)
+  print("Salario liquido: ",sl)
+else:
+   sl= sb-(sb*0.15)
+   sl=sl-(sl*0.07)
+   print("Salario liquido: ",sl)
+h= int(input("Digite a quantidade de horas extras: "))
+vh= float(input("Digite o valor da hora: "))
+if  h>=160:
+  vhe=vh+(vh*0.5)
+  sl=sl+(h*vhe)
+  print("Salario liquido final: ",sl)
