@@ -1,0 +1,74 @@
+#Ex 1
+print("1) Vetor B = A * 3")
+A = []
+for i in range(5):
+  A.append(int(input(f"Digite o {i+1}º elemento de A: ")))
+B = [x * 3 for x in A]
+print("Vetor B:", B)
+print("-" * 40)
+
+#Ex 2
+import math
+print("2) Vetor B = fatorial(A)")
+A = []
+for i in range(6):
+  A.append(int(input(f"Digite o {i+1}º elemento de A: ")))
+B = [math.factorial(x) for x in A]
+print("Vetor B:", B)
+print("-" * 40)
+
+#Ex 3
+print("3) Vetor C = A - B")
+A = []
+B = []
+for i in range(5):
+  A.append(int(input(f"Digite o {i+1}º elemento de A: ")))
+for i in range(5):
+  B.append(int(input(f"Digite o {i+1}º elemento de B: ")))
+C = [A[i] - B[i] for i in range(5)]
+print("Vetor C:", C)
+print("-" * 40)
+
+#Ex 4
+print("4) Vetor C = A + B")
+A = []
+B = []
+for i in range(5):
+  A.append(int(input(f"Digite o {i+1}º elemento de A: ")))
+for i in range(5):
+  B.append(int(input(f"Digite o {i+1}º elemento de B: ")))
+C = A + B
+print("Vetor C:", C)
+print("-" * 40)
+
+#Ex 5
+print("5) Vetor C = A + B (20 + 30)")
+A = []
+B = []
+for i in range(20):
+  A.append(int(input(f"Digite o {i+1}º elemento de A: ")))
+for i in range(30):
+  B.append(int(input(f"Digite o {i+1}º elemento de B: ")))
+C = A + B
+print("Vetor C:", C)
+print("Tamanho de C:", len(C))
+print("-" * 40)
+
+#Ex 6
+print("6) Vetor B = A²")
+A = []
+for i in range(8):
+  A.append(int(input(f"Digite o {i+1}º elemento de A: ")))
+B = [x**2 for x in A]
+print("Vetor B:", B)
+print("-" * 40)
+
+#Ex 7
+print("7) Vetor B = A invertido")
+A = []
+for i in range(10):
+  A.append(int(input(f"Digite o {i+1}º elemento de A: ")))
+B = A[::-1]
+print("Vetor A:", A)
+print("Vetor B (invertido):", B)
+print("-" * 40)
